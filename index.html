@@ -5,35 +5,70 @@
     <title>ChqserFree</title>
     <style>
         body {
-            background-color: #111;
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
             color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
             text-align: center;
-            font-family: Arial;
-            margin-top: 100px;
         }
 
         h1 {
-            font-size: 40px;
+            font-size: 50px;
+            margin-bottom: 20px;
+            color: #00ffcc;
+            text-shadow: 0 0 20px #00ffcc;
         }
 
-        button {
-            margin-top: 40px;
-            padding: 15px 30px;
+        p {
+            color: #aaa;
+            margin-bottom: 40px;
+        }
+
+        .download-btn {
+            padding: 15px 40px;
             font-size: 18px;
-            background-color: #00ff99;
+            color: white;
+            background: #00ffcc;
             border: none;
-            border-radius: 10px;
+            border-radius: 12px;
             cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 0 15px #00ffcc;
+        }
+
+        .download-btn:hover {
+            background: #00ccaa;
+            box-shadow: 0 0 25px #00ffcc;
+            transform: scale(1.05);
+        }
+
+        .card {
+            background: rgba(255,255,255,0.05);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.5);
         }
     </style>
 </head>
 <body>
 
-<h1>ChqserFree</h1>
+<div class="container">
+    <div class="card">
+        <h1>ChqserFree</h1>
+        <p>download</p>
 
-<a href="chqserfree.dll" download>
-    <button>Download</button>
-</a>
+        <a href="chqserfree.dll" download>
+            <button class="download-btn">⬇ Download</button>
+        </a>
+    </div>
+</div>
 
 </body>
 </html>
